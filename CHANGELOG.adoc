@@ -1,0 +1,7 @@
+== Changelog
+
+=== [0.1.0-SNAPSHOT] - 2021-08-17
+
+Initial release.
+
+==== Added
