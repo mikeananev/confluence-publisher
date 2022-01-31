@@ -17,7 +17,9 @@
  :aliases   {
 
              :build    {:deps       {io.github.clojure/tools.build {:tag "v0.1.8" :sha "38d2780"}}
-                        :ns-default build}
+                        :ns-default build
+                        :jvm-opts ["-source" "8" "-target" "8"]
+                        :javac-opts ["-source" "8" "-target" "8"]}
              :compile  {:extra-deps {badigeon/badigeon {:mvn/version "1.7"}}}
 
              :run      {:extra-paths ["resources"]
