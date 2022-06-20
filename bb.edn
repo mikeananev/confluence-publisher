@@ -1,4 +1,4 @@
-{:deps           {cprop/cprop {:mvn/version "0.1.18"}}
+{:deps           {cprop/cprop {:mvn/version "0.1.19"}}
 
  :min-bb-version "0.3.7"
 
@@ -65,6 +65,9 @@
                   ;;use `bb outdated --upgrade` or `bb outdated --upgrade --force`
                   outdated     {:doc  "Check for outdated dependencies"
                                 :task (clojure (str "-M:outdated " (apply str (interpose " " *command-line-args*))))}
+
+                  outdated:fix {:doc  "Check for outdated dependencies and fix"
+                                :task (clojure (str "-M:outdated --upgrade --force" (apply str (interpose " " *command-line-args*))))}
 
                   bump         {:doc  "Bump version artifact in `project-version` file, level may be one of: major, minor, patch, alpha, beta, rc, release."
                                 :task (let [param (first *command-line-args*)

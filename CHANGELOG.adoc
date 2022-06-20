@@ -1,5 +1,11 @@
 == Changelog
 
+=== [0.2.0] - 2022-06-20
+
+Upgraded all deps to their latest versions.
+Now it is possible to publish PUML files in asciidoc using its most recent syntax.
+
+
 === [0.1.0-SNAPSHOT] - 2021-08-17
 
 Initial release.
